@@ -6,11 +6,11 @@
 ;
 ;---------------------------------------------------------------
 
-DEF PASSWORD        EQU $C3A6   ;pointer to password var in ram
 
 IF DEF (MICKEY)
 
 ;For mickey mouse 2
+DEF PASSWORD        EQU $C3A6   ;pointer to password var in ram
 DEF PASSWORD_UPDATE EQU $2B02   ;sub to draw password text
 DEF PASSWORD_RESET  EQU $2B5C   ;sub to reset password
 DEF PASSWORD_TO_TXT EQU $2B11
@@ -18,12 +18,22 @@ DEF PASSWORD_TO_TXT EQU $2B11
 ELIF DEF (HUGO)
 
 ;for Hugo (E)(S)
+DEF PASSWORD        EQU $C3A6   ;pointer to password var in ram
 DEF PASSWORD_UPDATE EQU $23AB   ;sub to draw password text
 DEF PASSWORD_RESET  EQU $2405   ;sub to reset password
 DEF PASSWORD_TO_TXT EQU $23BA
 
+ELIF DEF (COLLECTION)
+
+;Bugs Bunny collection (J)(V1.1)(S)
+DEF PASSWORD        EQU $C3E6   ;pointer to password var in ram
+DEF PASSWORD_UPDATE EQU $58AD   ;sub to draw password text
+DEF PASSWORD_RESET  EQU $5907   ;sub to reset password
+DEF PASSWORD_TO_TXT EQU $58BC
+
 ELSE
 ;For buggs bunny crazy castle
+DEF PASSWORD        EQU $C3A6   ;pointer to password var in ram
 DEF PASSWORD_UPDATE EQU $2B06   ;sub to draw password text
 DEF PASSWORD_RESET  EQU $2B60   ;sub to reset password
 DEF PASSWORD_TO_TXT EQU $2B15
@@ -36,6 +46,8 @@ ENDC
 
 IF DEF (HUGO)
     SECTION "softreset",ROM0[$03D7]
+ELIF DEF (COLLECTION)    
+    SECTION "softreset",ROM0[$0396]
 ELSE
     SECTION "softreset",ROM0[$0388]
 ENDC
@@ -70,6 +82,8 @@ IF DEF (MICKEY)
     SECTION "load patch",ROM0[$2A30]
 ELIF DEF (HUGO)
     SECTION "load patch",ROM0[$22B9]
+ELIF DEF (COLLECTION)
+    SECTION "load patch",ROMX[$57EE],BANK[$0F]
 ELSE
     SECTION "load patch",ROM0[$2A34]
 ENDC
@@ -81,13 +95,19 @@ IF DEF (MICKEY)
     SECTION "save patch",ROM0[$2BE0]
 ELIF DEF (HUGO)
     SECTION "save patch",ROM0[$2489]
+ELIF DEF (COLLECTION)
+    SECTION "save patch",ROMX[$598B],BANK[$0F]
 ELSE
     SECTION "save patch",ROM0[$2BE4]
 ENDC
     call save_patch
 
 ;---------------------------------------
+IF DEF (COLLECTION)
+    SECTION "saveload",ROM0[$0080]
+ELSE    
     SECTION "saveload",ROM0[$0061]
+ENDC
 
 load_patch:
 

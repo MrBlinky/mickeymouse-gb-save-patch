@@ -5,6 +5,7 @@ call :patch "Mickey Mouse (UE).gb", -DMICKEY
 call :patch "Mickey Mouse II (J).gb", -DMICKEY
 call :patch "Bugs Bunny - Crazy Castle II (U).gb", -DBUGS
 call :patch "Hugo (E) (S).gb", -DHUGO
+call :patch "Bugs Bunny Collection (J) (V1.1) (S).gb", -DCOLLECTION
 
 popd
 exit /B
