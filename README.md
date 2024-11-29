@@ -1,6 +1,7 @@
 # Mickey Mouse Gameboy save patch
 
-Patches Mickey mouse (UE), Mickey Mouse 2 (J), Hugo (E) (S) and Bugs Bunny Crazy Castly (U)
+Patches Mickey mouse (UE), Mickey Mouse 2 (J), Hugo (E) (S), Bugs Bunny Crazy Castle (U)
+and Bugs Bunny Crazy Castle from the Bugs Bunny Collection (J) (V1.1) (S)
 gameboy roms to store and fetch password from save ram. Also patches the joypad
 to reset if the START + SELECT + B + A buttons are pressed at the same time.
 
@@ -25,3 +26,4 @@ saved to the (battery backed up) save ram. The next time you enter the password
 screen the last revealed password is already filled in and you only need to press
 START. You can still enter a different password if like in case you want to start
 at a different level.
+
