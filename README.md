@@ -30,8 +30,8 @@ IPS patch files are included to apply the patches easily using your favorite
 RGBASM is required. Put the files of this repo in a folder structure like this:
 
 <pre>
-.\rgbasm                               folder containing RGBASM.EXE
-.\patches\mickeymouse-gb-save-patch    folder to put the files of this repo
+.\rgbasm                               Folder containing RGBASM executables.
+.\patches\mickeymouse-gb-save-patch    Folder to put the files of this repo.
 </pre>
 
 Put one or all of the mentioned roms in the project folder and run patch-rom.bat
