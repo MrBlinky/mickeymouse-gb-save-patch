@@ -14,14 +14,15 @@ SELECT, B and A buttons are pressed at the same time. This feature can also be
 used to switch between games of the Bugs Bunny collection.
 
 ### Supported games
-
-* Bugs Bunny (U) ( sha-1: 2a3e982e542a849f95b4497025ca5b04db2abe8c )
-* Bugs Bunny - Crazy Castle II (U)		( sha-1: 1e4c8c8fe8b6c34f76cd0da876442f14299da725 )
-* Bugs Bunny Collection (J) (V1.1) (S) ( sha-1: 9d69d72b7de0377cb0439aa301b1fb82d3ce786a )
-* Hugo (E) (S) ( sha-1: d314dffcf5fb441d5d6d6419e01dc825e90cf0fc )
-* Mickey Mouse (J) ( sha-1: a5e526b47e9295c7cbea21a84bef2c1658e6f87e )
-* Mickey Mouse (UE) ( sha-1: b8e708dfe7496c712bd3ef171429d81cb6619252 )
-* Mickey Mouse II (J) ( sha-1: 2d44566d2d74f573d2faf23988a3070abb47555d )
+| Title                                | SHA-1                                    |
+| ------------------------------------ | ---------------------------------------- |
+| Bugs Bunny (U)                       | 2a3e982e542a849f95b4497025ca5b04db2abe8c |
+| Bugs Bunny - Crazy Castle II (U)     | 1e4c8c8fe8b6c34f76cd0da876442f14299da725 |
+| Bugs Bunny Collection (J) (V1.1) (S) | 9d69d72b7de0377cb0439aa301b1fb82d3ce786a |
+| Hugo (E) (S)                         | d314dffcf5fb441d5d6d6419e01dc825e90cf0fc |
+| Mickey Mouse (J)                     | a5e526b47e9295c7cbea21a84bef2c1658e6f87e |
+| Mickey Mouse (UE)                    | b8e708dfe7496c712bd3ef171429d81cb6619252 |
+| Mickey Mouse II (J)                  | 2d44566d2d74f573d2faf23988a3070abb47555d |
 
 ### Patching
 
